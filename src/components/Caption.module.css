@@ -1,0 +1,24 @@
+.caption,
+.sold {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5rem;
+}
+
+.dashed {
+  color: #1698d9;
+  text-decoration: dashed underline;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.sold {
+  color: #ffff66;
+}
+
+span {
+  color: #1698d9;
+  text-decoration: none;
+}

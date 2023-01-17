@@ -1,0 +1,160 @@
+.wrapper {
+  width: 320px;
+  height: 509px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.cardWrapper,
+.chosenCardWrapper,
+.justBoughtCardWrapper,
+.sold {
+  position: relative;
+  width: 320px;
+  height: 480px;
+  background: #1698d9;
+  border-radius: 12px;
+  clip-path: polygon(12% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 8%);
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.sold {
+  background: #f2f2f2;
+}
+
+.sold > .circle {
+  background: #b3b3b3;
+}
+
+.sold > .card {
+  filter: opacity(15%);
+}
+
+.cardWrapper:hover,
+.cardWrapper:hover > .circle {
+  background: #2ea8e6;
+  transition: background 0.1s;
+}
+
+.chosenCardWrapper {
+  background: #d91667;
+}
+
+.chosenCardWrapper:hover,
+.chosenCardWrapper:hover > .chosenCircle {
+  background: #e52e7a;
+  transition: background 0.1s;
+}
+
+.justBoughtCardWrapper:hover,
+.justBoughtCardWrapper:hover > .chosenCircle {
+  background: #d91667;
+}
+
+.circle,
+.chosenCircle {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 4.2rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1698d9;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  margin: 16px;
+}
+
+.chosenCircle {
+  background-color: #d91667;
+}
+
+.chosenCircle:hover {
+  background-color: #e52e7a;
+}
+
+.kilogramm {
+  font-size: 2.1rem;
+  line-height: 2.2rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.card {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 312px;
+  height: 472px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  background-color: white;
+  background-image: url('../assets/cat.png');
+  border-radius: 12px;
+  clip-path: polygon(12% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardContent {
+  width: 211px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.name {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  margin-top: 21px;
+  color: #666666;
+}
+
+.tasty {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  margin-top: 5px;
+  width: 216px;
+  margin-left: -3px;
+}
+
+.filling {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.gift,
+.size,
+.customerHappy {
+  color: #666666;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.size {
+  margin-top: 15px;
+}
+
+.size > span,
+.gift > span,
+.customerHappy {
+  color: #666666;
+  font-weight: 400;
+}
