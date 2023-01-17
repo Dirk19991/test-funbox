@@ -12,7 +12,10 @@ https://silly-caramel-e879dc.netlify.app/
 5. Верстку для проданных товаров можно посмотреть, если поменять false на true в const [sold, setSold] = useState(false);
 
 Установка:
+```
 git clone https://github.com/Dirk19991/test-funbox.git
-cd test-funbox
+cd .\test-funbox\
 npm install
 npm run dev
+
+```
